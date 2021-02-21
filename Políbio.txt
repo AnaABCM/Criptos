@@ -1,0 +1,59 @@
+let input = require('fs').readFileSync('entrada', 'utf8');
+let lines = input.split('\n');
+
+let p= lines.shift().toLowerCase();
+let a= "";
+
+for(i=0; i<p.length; i++){
+    if(p.charAt(i)=='a'){
+        a+= "11";
+} if(p.charAt(i)=='b'){
+        a+= "12"
+} if(p.charAt(i)=='c'){
+        a+= "13"
+} if(p.charAt(i)=='d'){
+        a+= "14";
+} if(p.charAt(i)=='e'){
+        a+= "15"
+} if(p.charAt(i)=='f'){
+        a+= "21"
+} if(p.charAt(i)=='g'){
+        a+= "22";
+} if(p.charAt(i)=='h'){
+        a+= "23"
+} if(p.charAt(i)=='i'){
+        a+= "24"
+} if(p.charAt(i)=='j'){
+        a+= "25";
+} if(p.charAt(i)=='k' | p.charAt(i)=='q'){
+        a+= "31"
+} if(p.charAt(i)=='l'){
+        a+= "32"
+} if(p.charAt(i)=='m'){
+        a+= "33"
+} if(p.charAt(i)=='n'){
+        a+= "34";
+} if(p.charAt(i)=='o'){
+        a+= "35"
+} if(p.charAt(i)=='p'){
+        a+= "41"
+} if(p.charAt(i)=='r'){
+        a+= "42";
+} if(p.charAt(i)=='s'){
+        a+= "43"
+} if(p.charAt(i)=='t'){
+        a+= "44"
+} if(p.charAt(i)=='u'){
+        a+= "45";
+} if(p.charAt(i)=='v'){
+        a+= "51"
+} if(p.charAt(i)=='w'){
+        a+= "52"
+} if(p.charAt(i)=='x'){
+        a+= "53"
+} if(p.charAt(i)=='y'){
+        a+= "54"
+}if(p.charAt(i)=='z'){
+        a+= "55"
+}
+}console.log(a)
