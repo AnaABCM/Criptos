@@ -1,0 +1,28 @@
+let input = require('fs').readFileSync('entrada', 'utf8');
+let lines = input.split('\n');
+
+let texto = lines.shift();
+let dsl= parseInt(lines.shift());
+dsl= [];
+let t= [];
+let tcod= "";
+let nd;
+
+for(i=0; i<texto.length; i++){
+    t.push(texto.charCodeAt(i))
+}
+for(j=0; j<t.length; j++){
+    if(t[j]>=65 && t[j]<=90){
+        dsl.push(((t[j]- 65 + dsl)%26)+ 65);
+
+    }else if(t[j] >= 97 && t[j] <= 122){
+        dsl.push((((t[j] - 97 + nd) % 26) + 97));
+    }else{
+        dsl.push(t[j])
+    }
+}
+for(g=0; g<dsl.length; g++){
+    tcod += String.fromCharCode(dsl[g]);
+      }
+
+console.log(tcod);
